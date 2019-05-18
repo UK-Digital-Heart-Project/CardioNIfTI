@@ -30,40 +30,56 @@ To visualise the images download [ITKsnap](http://www.itksnap.org/pmwiki/pmwiki.
 ### Download Docker image
 In W10 open PowerShell from the Windows search box (Win + X then I), in macOS navigate Finder > Applications > Utilities > Terminal, or in Linux any terminal can be used. Then download the pre-compiled image:
 
-  ```docker pull gdoumou/auto_conversion:latest```
+  ```
+  docker pull gdoumou/auto_conversion:latest
+  ```
   
 Check the image is there
 
-  ```docker images```
+  ```
+  docker images
+  ```
 
 should show auto_conversion on the list of images on your local system.
 
-### Run 4Dsegment Docker image
+### Run the Docker image
 
 Note the path to the folder on your desktop eg /c/Users/home/Desktop/CardioNIfTI and substitute <folder-path> within this command:
   
-```docker run -it --rm -v <folder-path>:/code/data gdoumou/auto_conversion```
+```
+docker run -it --rm -v <folder-path>:/code/data gdoumou/auto_conversion
+```
 
 When it logs in:
 
-```export LD_LIBRARY_PATH=/lib64```
+```
+export LD_LIBRARY_PATH=/lib64
+```
 
 Navigate to code/data and check that it has mounted your data into the data folder:
 
-```cd data```
-```ls```
+```
+cd data
+ls
+```
 
 note: if in MAC type
 
-```find . -name '.DS_Store' -type f –delete```
+```
+find . -name '.DS_Store' -type f –delete
+```
 
 navigate back to /code
 
-```cd ..```
+```
+cd ..
+```
 
 check the content
 
-```ls```
+```
+ls
+```
 
 ### Run the python scripts 
 
@@ -73,14 +89,18 @@ check the content
 
 example:
 
-```python auto_conversion.py```
+```
+python auto_conversion.py
+```
 
 when you finish type:
 
-```exit```
+```
+exit
+```
 
 ### Outputs from the pipeline
-Once the pipeline is finished, under the root directory of each subject, you have three nifti files, i.e., `LVSA.nii.gz`, `LVSA_img_ED.nii.gz` and `LVSA_img_ES.nii.gz`.
+Once the pipeline is finished, under the root directory of each subject, you have three nifti files, i.e., `LVSA.nii.gz`, `LVSA_img_ED.nii.gz` and `LVSA_img_ES.nii.gz` which can be visualised in ITKsnap.
 
 
 
