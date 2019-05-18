@@ -14,7 +14,7 @@ Contains 3 sample datasets on which the functions of the code can be run.
 
 To run the code in the [code](code) directory, we provide a [Docker](https://www.docker.com) image with all the necessary dependencies pre-compiled. 
 
-## 1. Installation/Usage Guide for Docker Image
+## Installation/Usage Guide for Docker Image
 A Docker image is available on dockerhub https://hub.docker.com/r/gdoumou/auto_conversion. This image contains a base Ubuntu linux operating system image set up with all the libraries required to run the code.
 
 ### Download the repo
@@ -49,16 +49,20 @@ When it logs in:
 ```export LD_LIBRARY_PATH=/lib64```
 
 Navigate to code/data and check that it has mounted your data into the data folder:
+
 ```cd data```
 ```ls```
 
 note: if in MAC type
+
 ```find . -name '.DS_Store' -type f –delete```
 
 navigate back to /code
+
 ```cd ..```
 
 check the content
+
 ```ls```
 
 ### Run the python scripts 
@@ -68,9 +72,11 @@ check the content
 3) LVSA_structure.py (optional)
 
 example:
+
 ```python auto_conversion.py```
 
-when you finish type
+when you finish type:
+
 ```exit```
 
 ### Outputs from the pipeline
