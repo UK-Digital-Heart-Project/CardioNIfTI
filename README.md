@@ -17,53 +17,64 @@ To run the code in the [code](code) directory, we provide a [Docker](https://www
 ## 1. Installation/Usage Guide for Docker Image
 A Docker image is available on dockerhub https://hub.docker.com/r/gdoumou/auto_conversion. This image contains a base Ubuntu linux operating system image set up with all the libraries required to run the code.
 
-## Install Docker
-For Windows 10 Pro first install Docker. Windows 10 Home users will require Docker toolbox.
-Ensure you have the C drive selected as a shared drive in Docker settings (or in VirtualBox on W10 Home).
-To visualise the cines download ITKsnap.
+### Download the repo
+Click the download button, unzip to your desktop etc. 
 
-1-	Download Auto conversion Docker image
+### Install Docker
+For Windows 10 Pro first install [Docker](https://www.docker.com/docker-windows). Windows 10 Home users will require [Docker toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/).
+
+Ensure you have the C drive selected as a [shared drive](https://docs.docker.com/docker-for-windows/) in Docker settings (or in VirtualBox on W10 Home).
+
+To visualise the images download [ITKsnap](http://www.itksnap.org/pmwiki/pmwiki.php).
+
+### Download Docker image
 In W10 open PowerShell from the Windows search box (Win + X then I), in macOS navigate Finder > Applications > Utilities > Terminal, or in Linux any terminal can be used. Then download the pre-compiled image:
 
-docker pull gdoumou/auto_conversion:latest
-#check the image is there
-docker images
-#should show auto_conversion on the list of images on your local system
+  ```docker pull gdoumou/auto_conversion:latest```
+  
+Check the image is there
 
-2 - Run 4Dsegment Docker image
-# Note the path to the folder on your desktop eg /c/Users/home/Desktop/4Dsegment and substitute <folder-path> within this command:
-docker run -it --rm -v <folder-path>:/code/data gdoumou/auto_conversion
-eg:
-docker run -it --rm -v /Users/GDoumou/Desktop/data/:/code/data gdoumou/auto_conversion
+  ```docker images```
 
-#When it logs in:
-export LD_LIBRARY_PATH=/lib64
+should show auto_conversion on the list of images on your local system.
 
-#navigate to code/data and check that it has mounted your data into the data folder:
-cd data
-ls
+### Run 4Dsegment Docker image
 
-#note: if in MAC type
-find . -name '.DS_Store' -type f –delete
+Note the path to the folder on your desktop eg /c/Users/home/Desktop/CardioNIfTI and substitute <folder-path> within this command:
+  
+```docker run -it --rm -v <folder-path>:/code/data gdoumou/auto_conversion```
 
-#navigate back to /code
-cd ..
+When it logs in:
 
-#check the content
-ls
+```export LD_LIBRARY_PATH=/lib64```
 
-# run the python scripts 
+Navigate to code/data and check that it has mounted your data into the data folder:
+```cd data```
+```ls```
+
+note: if in MAC type
+```find . -name '.DS_Store' -type f –delete```
+
+navigate back to /code
+```cd ..```
+
+check the content
+```ls```
+
+### Run the python scripts 
+
 1) repeated_slices.py (optional) 
 2) auto_conversion 
 3) LVSA_structure.py (optional)
+
 example:
-python auto_conversion.py
+```python auto_conversion.py```
 
-#when you finish type
-exit
+when you finish type
+```exit```
 
-3 - Outputs from the pipeline
-Once the pipeline is finished, under the root directory of each subject, you have three nifti files, i.e., LVSA.nii.gz, LVSA_img_ED.nii.gz and LVSA_img_ES.nii.gz
+### Outputs from the pipeline
+Once the pipeline is finished, under the root directory of each subject, you have three nifti files, i.e., `LVSA.nii.gz`, `LVSA_img_ED.nii.gz` and `LVSA_img_ES.nii.gz`.
 
 
 
