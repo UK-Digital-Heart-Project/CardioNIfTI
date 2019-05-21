@@ -19,6 +19,7 @@ A Docker image is available on dockerhub https://hub.docker.com/r/gdoumou/auto_c
 
 ### Download the repo
 Click the download button, unzip to your desktop etc. 
+In ...CardioNIfTI/data unzip the two folders containing sample DICOM stacks.
 
 ### Install Docker
 For Windows 10 Pro first install [Docker](https://www.docker.com/docker-windows). Windows 10 Home users will require [Docker toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/).
@@ -44,7 +45,7 @@ should show auto_conversion on the list of images on your local system.
 
 ### Run the Docker image
 
-Note the path to the folder on your desktop eg /c/Users/home/Desktop/CardioNIfTI and substitute <folder-path> within this command:
+Note the path to the folder on your desktop eg /c/Users/home/Desktop/CardioNIfTI/data and substitute <folder-path> within this command:
   
 ```
 docker run -it --rm -v <folder-path>:/code/data gdoumou/auto_conversion
