@@ -19,7 +19,7 @@ A Docker image is available on dockerhub https://hub.docker.com/r/gdoumou/auto_c
 
 ### Download the repo
 Click the download button, unzip to your desktop etc. 
-In ...CardioNIfTI/data unzip the two folders containing sample DICOM stacks.
+In `...CardioNIfTI/data` unzip the two folders containing sample DICOM stacks.
 
 ### Install Docker
 For Windows 10 Pro first install [Docker](https://www.docker.com/docker-windows). Windows 10 Home users will require [Docker toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/).
