@@ -10,9 +10,10 @@ The files in this repository are organised as follows:
 3) LVSA_structure.py (optional) – creates a new folder - “LVSA” – which contains copies of the 3 new NIfTI files
 
 [Data](data):
-Contains 3 sample datasets on which the functions of the code can be run.
 
-To run the code in the [code](code) directory, we provide a [Docker](https://www.docker.com) image with all the necessary dependencies pre-compiled. 
+Contains sample DICOM datasets on which the functions of the code can be run.
+
+To run the [code](code) we provide a [Docker](https://www.docker.com) image with all the necessary dependencies pre-compiled. 
 
 ## Installation/Usage Guide for Docker Image
 A Docker image is available on dockerhub https://hub.docker.com/r/gdoumou/auto_conversion. This image contains a base Ubuntu linux operating system image set up with all the libraries required to run the code.
@@ -51,35 +52,23 @@ Note the path to the folder on your desktop eg /c/Users/home/Desktop/CardioNIfTI
 docker run -it --rm -v <folder-path>:/code/data gdoumou/auto_conversion
 ```
 
-When it logs in:
+At the root prompt enter:
 
 ```
 export LD_LIBRARY_PATH=/lib64
 ```
 
-Navigate to code/data and check that it has mounted your data into the data folder:
+Navigate to /code/data and check that it has mounted your data into the data folder:
 
 ```
 cd data
 ls
 ```
 
-note: if in MAC type
-
-```
-find . -name '.DS_Store' -type f –delete
-```
-
-navigate back to /code
+Then return to /code:
 
 ```
 cd ..
-```
-
-check the content
-
-```
-ls
 ```
 
 ### Run the python scripts 
@@ -104,6 +93,9 @@ exit
 Once the pipeline is finished, under the root directory of each subject, you have three nifti files, i.e., `LVSA.nii.gz`, `LVSA_img_ED.nii.gz` and `LVSA_img_ES.nii.gz` which can be visualised in ITKsnap.
 
 
+### Acknowledgements 
+This code was developed by Georgia Doumou.
+Dependencies - [dcm2niix](https://github.com/rordenlab/dcm2niix)
 
 
 
