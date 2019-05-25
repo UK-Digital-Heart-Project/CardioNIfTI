@@ -90,7 +90,7 @@ exit
 ```
 
 ### Outputs from the pipeline
-Once the pipeline is finished, under the root directory of each subject, you have three nifti files, i.e., `LVSA.nii.gz`, `LVSA_img_ED.nii.gz` and `LVSA_img_ES.nii.gz` which can be visualised in ITKsnap.
+Once the pipeline is finished, under the root directory of each subject, you have three NIfTI files, i.e., `LVSA.nii.gz`, `LVSA_img_ED.nii.gz` and `LVSA_img_ES.nii.gz` which can be visualised in ITKsnap.
 
 
 ### Acknowledgements 
