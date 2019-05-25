@@ -5,9 +5,9 @@ Software tools for preprocessing of cardiac MR DICOM datasets and conversion to 
 The files in this repository are organised as follows:
 
 [Code](code):
-1) repeated_slices.py (optional) – it identifies repeated cine slices, finds the latest repeat and deletes older versions
-2) auto_conversion – converts multi and single frame dicoms into NIfTIs. It also identifies the end-diastolic and end-systolic frames in this cine and saves these as separate files (“LVSA_img_ED.nii.gz” and “LVSA_img_ES.nii.gz”)
-3) LVSA_structure.py (optional) – creates a new folder - “LVSA” – which contains copies of the 3 new NIfTI files
+1) `repeated_slices.py` (optional) – it identifies repeated cine slices, finds the latest repeat and deletes older versions.
+2) `auto_conversion.py` – converts multi and single frame dicoms into NIfTIs. It also identifies the end-diastolic and end-systolic frames in this cine and saves these as separate files (`LVSA_img_ED.nii.g` and `LVSA_img_ES.nii.gz`).
+3) `LVSA_structure.py` (optional) – creates a new folder - “LVSA” – which contains copies of the 3 new NIfTI files.
 
 [Data](data):
 
@@ -46,7 +46,7 @@ should show auto_conversion on the list of images on your local system.
 
 ### Run the Docker image
 
-Note the path to the folder on your desktop eg /c/Users/home/Desktop/CardioNIfTI/data and substitute <folder-path> within this command:
+Note the path to the data folder (containing the DICOM files) on your desktop eg `/c/Users/home/Desktop/CardioNIfTI/data` and substitute <folder-path> within this command:
   
 ```
 docker run -it --rm -v <folder-path>:/code/data gdoumou/auto_conversion
@@ -94,7 +94,7 @@ Once the pipeline is finished, under the root directory of each subject, you hav
 
 
 ### Acknowledgements 
-This code was developed by Georgia Doumou.
+This code was developed by Georgia Doumou with help from Wenjia Bai - Imperial College London.
 Dependencies - [dcm2niix](https://github.com/rordenlab/dcm2niix)
 
 
