@@ -1,5 +1,5 @@
 # CardioNIfTI
-Software tools for preprocessing of cardiac MR DICOM datasets and conversion to NIfTI.
+Software tools for preprocessing of cardiac MR DICOM datasets and conversion to NIfTI. You should make a copy of your orignal data before running this tool.
 
 # Overview 
 The files in this repository are organised as follows:
