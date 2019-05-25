@@ -6,7 +6,7 @@ The files in this repository are organised as follows:
 
 [Code](code):
 1) `repeated_slices.py` (optional) – it identifies repeated cine slices, finds the latest repeat and deletes older versions.
-2) `auto_conversion.py` – converts multi and single frame dicoms into NIfTIs. It also identifies the end-diastolic and end-systolic frames in this cine and saves these as separate files (`LVSA_img_ED.nii.g` and `LVSA_img_ES.nii.gz`).
+2) `auto_conversion.py` – converts multi and single frame dicoms into one NIfTI (`LVSA.nii.gz`). It also identifies the end-diastolic and end-systolic frames in this cine and saves these as separate files (`LVSA_img_ED.nii.g` and `LVSA_img_ES.nii.gz`).
 3) `LVSA_structure.py` (optional) – creates a new folder - `LVSA` – which contains copies of the 3 new NIfTI files.
 
 [Data](data):
