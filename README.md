@@ -58,7 +58,7 @@ At the root prompt enter:
 export LD_LIBRARY_PATH=/lib64
 ```
 
-Navigate to /code/data and check that it has mounted your data into the data folder:
+Navigate to /code/data and check that it has mounted your DICOM folders (eg LVSA1 and LVSA2):
 
 ```
 cd data
