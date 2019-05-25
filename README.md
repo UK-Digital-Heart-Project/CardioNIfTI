@@ -46,7 +46,7 @@ should show auto_conversion on the list of images on your local system.
 
 ### Run the Docker image
 
-Note the path to the data folder (containing the DICOM files) on your desktop eg `/c/Users/Desktop/CardioNIfTI/data` and substitute <folder-path> within this command:
+Note the path to the data folder (containing the DICOM files) on your desktop eg `/c/Users/Desktop/CardioNIfTI/data` and substitute `<folder-path>` within this command:
   
 ```
 docker run -it --rm -v <folder-path>:/code/data gdoumou/auto_conversion
