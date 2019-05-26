@@ -1,4 +1,4 @@
-# CardioNIfTI
+# CardioNIfTI ![](https://img.shields.io/badge/beta-version-blue.svg)
 Software tools for preprocessing of cardiac MR DICOM datasets and conversion to NIfTI. You should make a copy of your original data before running this tool.
 
 ![](imagej_cine.gif)
