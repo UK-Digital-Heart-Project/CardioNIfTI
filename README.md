@@ -75,9 +75,9 @@ cd ..
 
 ### Run the python scripts 
 
-1) repeated_slices.py (optional) 
-2) auto_conversion 
-3) LVSA_structure.py (optional)
+1) `repeated_slices.py` (optional) 
+2) `auto_conversion` 
+3) `LVSA_structure.py` (optional)
 
 example:
 
