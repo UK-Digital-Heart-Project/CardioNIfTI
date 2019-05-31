@@ -1,5 +1,5 @@
 # CardioNIfTI ![](https://img.shields.io/badge/beta-version-blue.svg)
-Software tools for preprocessing of cardiac MR DICOM datasets and conversion to NIfTI. You should make a copy of your original data before running this tool.
+Software tools for preprocessing of cardiac MR DICOM datasets and conversion to NIfTI prior to segmentation. You should make a copy of your original data before running this tool.
 
 ![](imagej_cine.gif)
 
@@ -29,7 +29,7 @@ For Windows 10 Pro first install [Docker](https://www.docker.com/docker-windows)
 
 Ensure you have the C drive selected as a [shared drive](https://docs.docker.com/docker-for-windows/) in Docker settings (or in VirtualBox on W10 Home).
 
-To visualise the images download [ITKsnap](http://www.itksnap.org/pmwiki/pmwiki.php).
+To visualise the images download [ImageJ](https://imagej.nih.gov/) or equivalent.
 
 ### Download Docker image
 In W10 open PowerShell from the Windows search box (Win + X then I), in macOS navigate Finder > Applications > Utilities > Terminal, or in Linux any terminal can be used. Then download the pre-compiled image:
