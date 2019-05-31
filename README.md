@@ -13,7 +13,7 @@ The files in this repository are organised as follows:
 
 [Data](data):
 
-Contains sample DICOM datasets on which the functions of the code can be run.
+Contains sample DICOM datasets on which the functions of the code can be run. `LVSA_1` is a Philips sequence with consecutive DICOM files, while `LVSA_2` is a Siemens sequence with each slice in separate folders. 
 
 To run the [code](code) we provide a [Docker](https://www.docker.com) image with all the necessary dependencies pre-compiled. 
 
