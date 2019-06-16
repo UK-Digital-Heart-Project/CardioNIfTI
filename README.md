@@ -96,7 +96,7 @@ Once the pipeline is finished, under the root directory of each subject, you hav
 
 
 ### Acknowledgements 
-This code was developed by Jinming Duan and Georgia Doumou with help from Wenjia Bai - Imperial College London.
+This code was developed by Georgia Doumou with help from Wenjia Bai and Jinming Duan - Imperial College London.
 Dependencies - [dcm2niix](https://github.com/rordenlab/dcm2niix)
 
 
