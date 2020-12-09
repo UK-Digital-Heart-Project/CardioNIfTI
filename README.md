@@ -24,7 +24,7 @@ A Docker image is available on dockerhub [https://hub.docker.com/r/gdoumou/auto\
 
 #### Download the repo
 
-Click the download button, unzip to your desktop etc. In `...CardioNIfTI/data` unzip the two folders containing sample DICOM stacks.
+Click the Code button, and then unzip the file to your desktop etc. In `...CardioNIfTI/data` unzip the two folders containing sample DICOM stacks.
 
 #### Install Docker
 
