@@ -1,5 +1,7 @@
 # README
 
+[![DOI](https://zenodo.org/badge/175637825.svg)](https://zenodo.org/badge/latestdoi/175637825)
+
 ## CardioNIfTI ![](https://img.shields.io/badge/beta-version-blue.svg)
 
 Software tools for preprocessing of cardiac MR DICOM datasets and conversion to NIfTI prior to segmentation. You should make a copy of your original data before running this tool.
